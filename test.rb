@@ -17,8 +17,8 @@ loop {
   sleep 1
 }
 pin = ESP32::GPIO::Pin.new(18,OUTPUT)
-
-pin = ESP32::GPIO::Pin.new(18,:output)
+pin = ESP32::GPIO::Pin.new(6,INPUT)
+pin1 = ESP32::GPIO::Pin.new(18,:output)
 
 
 include ESP32::GPIO
@@ -35,4 +35,15 @@ loop {
   sleep 1
 }
 
+
+pin = ESP32::GPIO::Pin.new(ADC1_CHANNEL_6,INPUT)
 pin.analog_read( ADC1_CHANNEL_6)
+
+
+loop {
+  w = pin.read_at 6
+  V = w * (3.3 / 4095)
+  T = (V - 0.5) /0.0195
+  puts "Temp : #{T}"
+  sleep 1
+}
