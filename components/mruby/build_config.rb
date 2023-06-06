@@ -86,7 +86,12 @@ MRuby::CrossBuild.new('esp32') do |conf|
   #conf.gem :github => "mruby-esp32/mruby-esp32-mqtt"
   #conf.gem :github => "mruby-esp32/mruby-io", :branch => 'esp32'
   #conf.gem :github => "mruby-esp32/mruby-esp32-gpio"
-  conf.gem :github => 'mruby-esp32/mruby-esp32-gpio'
-  conf.gem :git => 'https://github.com/matsumoto-r/mruby-sleep.git'  
+
+  #conf.gem :github => 'mruby-esp32/mruby-esp32-gpio'
+  conf.gem :git => 'https://github.com/matsumoto-r/mruby-sleep.git' 
+  conf.gem '/home/wave/esp/work/mruby-yourname' 
+  conf.gem '/home/wave/esp/gems' 
+  #conf.gem '/home/wave/esp/Test-mrbgems/mruby-gpio'
+  
 
 end
