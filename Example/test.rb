@@ -5,6 +5,10 @@ while true do
 end
 
 include ESP32::GPIO
+
+include ESP32::STANDARD
+p = GPIO.new(18,OUT)
+p.high_at?
 led = GPIO_NUM_18
 pinMode(led, OUTPUT)
 
