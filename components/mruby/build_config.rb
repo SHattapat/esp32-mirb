@@ -90,7 +90,8 @@ MRuby::CrossBuild.new('esp32') do |conf|
   #conf.gem :github => 'mruby-esp32/mruby-esp32-gpio'
   conf.gem :git => 'https://github.com/matsumoto-r/mruby-sleep.git' 
   conf.gem '/home/wave/esp/work/mruby-yourname' 
-  conf.gem '/home/wave/esp/gems' 
+  #conf.gem '/home/wave/esp/gems' 
+  conf.gem '/home/wave/esp/my_mruby_project/components/mruby/mruby/build/repos/esp32/mruby-standard-gpio'
   #conf.gem '/home/wave/esp/Test-mrbgems/mruby-gpio'
   
 
