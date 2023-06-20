@@ -12,8 +12,8 @@ p.high_at?
 
 
 include ESP32::STANDARD
-led = GPIO_NUM_18
-pinMode(led, OUTPUT)
+led = GPIO_NUM_16
+pinMode(led, INPUT)
 digitalWrite(led, HIGH)
 
 digitalRead(led)
