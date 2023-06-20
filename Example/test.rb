@@ -9,8 +9,14 @@ include ESP32::GPIO
 include ESP32::STANDARD
 p = GPIO.new(18,OUT)
 p.high_at?
+
+
+include ESP32::STANDARD
 led = GPIO_NUM_18
 pinMode(led, OUTPUT)
+digitalWrite(led, HIGH)
+
+digitalRead(led)
 
 loop {
   digitalWrite(led, HIGH)
