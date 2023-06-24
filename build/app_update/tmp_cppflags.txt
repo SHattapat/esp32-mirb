@@ -1,1 +1,1 @@
-5c05ae6-dirty my_mruby_project v4.1
+ced00ab-dirty my_mruby_project v4.1
